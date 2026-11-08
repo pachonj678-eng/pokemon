@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador PokéAPI - Taller SENA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card-container">
+        <h1>Buscador Pokédex</h1>
+        <p class="subtitle">Consumo de API pública (PokéAPI)</p>
+
+        <div class="search-form">
+            <input type="text" id="pokemon-input" placeholder="Ej: pikachu, charizard o ID (1-1025)...">
+            <button id="search-btn">Buscar</button>
+        </div>
+
+        <div id="pokemon-card" class="pokemon-card hidden">
+            <img id="pokemon-img" src="" alt="Imagen del Pokémon">
+            <h2 id="pokemon-name"></h2>
+            <p><strong>N.º Pokédex:</strong> #<span id="pokemon-id"></span></p>
+            <p><strong>Tipo(s):</strong> <span id="pokemon-types"></span></p>
+            <div class="stats">
+                <p><strong>Altura:</strong> <span id="pokemon-height"></span> m</p>
+                <p><strong>Peso:</strong> <span id="pokemon-weight"></span> kg</p>
+            </div>
+        </div>
+
+        <div id="error-message" class="error-msg hidden">
+            ❌ No se encontró el Pokémon. Revisa el nombre o número e intenta de nuevo.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
